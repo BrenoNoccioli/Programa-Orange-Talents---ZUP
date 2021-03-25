@@ -1,0 +1,38 @@
+<div class="container-fluid bg-dark">
+  <div class="row pt-5 pb-5 d-flex justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-center mb-3 text-white">Cadastro de aplicação de vacinas</h1>
+
+      <div class="form-group">
+        <label for="nome" class="font-weight-bold">Nome da vacina</label>
+        <input
+          [(ngModel)]='vacina.nomeVacina'
+          class="form-control"
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Informe a vacina aplicada"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" class="font-weight-bold">E-mail do usuário</label>
+        <input
+        [(ngModel)]='vacina.emailUsuario'
+          class="form-control"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="exemplo@exemplo.com"
+        />
+      </div>
+      <div class="d-flex justify-content-center pb-2 pt-1">
+        <button class="btn btn-success border-white mt-3" type="submit" (click)='cadastrar()'>Cadastrar aplicação</button>
+      </div>
+      <a routerLink='/usuarios' class="d-flex justify-content-center text-white mt-2">
+        Ir para Cadastro de Usuários
+      </a>
+
+    </div>
+  </div>
+  
+</div>

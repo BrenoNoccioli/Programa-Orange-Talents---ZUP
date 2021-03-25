@@ -1,0 +1,13 @@
+
+input{
+  border: 2px solid rgb(236,112,0);
+  background-color: #fefefef3;
+}
+
+label {
+  color: rgb(236,112,0);
+}
+
+a{
+  cursor: pointer;
+}
